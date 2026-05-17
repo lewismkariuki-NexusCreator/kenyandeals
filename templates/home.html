@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenyan Deals | Best Deals on Jumia, Amazon & Kilimall</title>
+    <meta name="description" content="Kenya's most trusted price comparison engine. We track thousands of products across Jumia, Amazon, and Kilimall to find you the absolute lowest prices in Kenya.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .product-card:hover { transform: translateY(-8px); }
+        .hidden-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="bg-indigo-600 text-white p-1.5 rounded-lg">
+                    <i data-lucide="trending-up" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xl font-black tracking-tighter text-slate-900 uppercase">Kenyan<span class="text-indigo-600">Deals</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+                <a href="/#featured" class="hover:text-indigo-600 transition-colors">Featured</a>
+                <a href="/#all-products" class="hover:text-indigo-600 transition-colors">All Products</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors">Buying Guides</a>
+                <button onclick="alert('Our weekly deals newsletter is launching soon! Check back later.')" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-900/10">Subscribe</button>
+            </div>
+            
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-900"><i data-lucide="menu"></i></button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 mt-4 pt-4 pb-2 space-y-4 text-xs font-black uppercase tracking-[0.2em] text-slate-500">
+            <a href="/#featured" class="block hover:text-indigo-600 transition-colors">Featured</a>
+            <a href="/#all-products" class="block hover:text-indigo-600 transition-colors">All Products</a>
+            <a href="#" class="block hover:text-indigo-600 transition-colors">Buying Guides</a>
+            <button onclick="alert('Our weekly deals newsletter is launching soon! Check back later.')" class="w-full mt-4 bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-indigo-600 transition-all shadow-lg">Subscribe</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative pt-20 pb-12 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest border border-indigo-100">
+                <i data-lucide="zap" class="w-3 h-3"></i> 2026 Price Comparison Engine
+            </div>
+            <h1 class="text-4xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1] text-slate-900 mt-4 mb-2">
+                FIND THE BEST DEALS. <br>
+                <span class="text-indigo-600">IN ONE PLACE.</span>
+            </h1>
+            <p class="text-lg text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
+                We track thousands of products across Jumia, Amazon, and Kilimall to find you the absolute lowest prices in Kenya.
+            </p>
+            
+            <!-- SEARCH BAR -->
+            <div class="max-w-2xl mx-auto relative group">
+                <div class="absolute inset-y-0 left-5 flex items-center text-slate-400 group-focus-within:text-indigo-600 transition-colors">
+                    <i data-lucide="search" class="w-5 h-5"></i>
+                </div>
+                <input type="text" placeholder="Search for phones, solar, laptops..." 
+                    class="w-full bg-white border-2 border-slate-100 py-5 pl-14 pr-6 rounded-3xl text-sm font-bold shadow-2xl shadow-indigo-500/5 focus:border-indigo-600 focus:ring-0 outline-none transition-all">
+            </div>
+        </div>
+    </header>
+
+    <!-- FEATURED PRODUCT -->
+    <section id="featured" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="bg-indigo-600 rounded-[3rem] p-8 md:p-16 text-white grid md:grid-cols-2 items-center gap-12 overflow-hidden relative group">
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            
+            <div class="space-y-6 relative z-10">
+                <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">Editor's Pick</div>
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter leading-none">Best Power Hub 2026: EcoFlow Delta 2</h2>
+                <p class="text-indigo-100 font-medium leading-relaxed">
+                    Never worry about blackouts again. This 1024Wh portable power station can run your fridge, laptop, and TV simultaneously. We found the best price on Kilimall today.
+                </p>
+                <div class="flex items-center gap-6">
+                    <div class="text-3xl font-black tracking-tighter">KSh 142,500</div>
+                    <a href="/ecoflow-delta-2-portable-power-station-price-kenya" class="bg-white text-indigo-600 px-8 py-4 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-slate-50 transition-all shadow-xl">Get This Deal</a>
+                </div>
+            </div>
+            
+            <img src="/assets/images/ecoflow-delta2.png" class="w-full max-w-sm mx-auto object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-700">
+        </div>
+    </section>
+
+    <!-- ALL PRODUCTS GRID -->
+    <section id="all-products" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex items-center justify-between mb-12">
+            <h2 class="text-3xl font-black tracking-tighter">Current Best Deals</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-grid">
+            {{PRODUCT_GRID}}
+        </div>
+        
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div class="md:col-span-2 space-y-6">
+                <div class="flex items-center gap-2">
+                    <div class="bg-indigo-600 text-white p-1.5 rounded-lg">
+                        <i data-lucide="trending-up" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-black tracking-tighter text-white uppercase">Kenyan<span class="text-indigo-600">Deals</span></span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                    Kenya's most trusted price comparison engine. We help you find the best value across global and local retailers with zero bias. 
+                    Supported by affiliate partnerships.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Explore</h4>
+                <ul class="space-y-4 text-sm font-bold text-slate-400">
+                    <li><a href="/#all-products" class="hover:text-white">Top Tech Deals</a></li>
+                    <li><a href="/ecoflow-delta-2-portable-power-station-price-kenya" class="hover:text-white">Solar Buying Guide</a></li>
+                    <li><a href="/#all-products" class="hover:text-white">Importing from Amazon</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Accountability</h4>
+                <ul class="space-y-4 text-xs font-bold text-slate-500">
+                    <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i> Amazon Associate</li>
+                    <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i> Jumia KOL Partner</li>
+                    <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i> Kilimall Partner</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-12 border-t border-white/5 text-center">
+            <p class="text-[9px] font-black text-slate-600 uppercase tracking-widest italic">
+                Kenyan Deals is an independent review site. When you buy through our links, we may earn a small commission.
+            </p>
+            <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-4">
+                © 2026 Kenyan Deals. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

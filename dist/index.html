@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenyan Deals | Best Deals on Jumia, Amazon & Kilimall</title>
+    <meta name="description" content="Kenya's most trusted price comparison engine. We track thousands of products across Jumia, Amazon, and Kilimall to find you the absolute lowest prices in Kenya.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .product-card:hover { transform: translateY(-8px); }
+        .hidden-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="bg-indigo-600 text-white p-1.5 rounded-lg">
+                    <i data-lucide="trending-up" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xl font-black tracking-tighter text-slate-900 uppercase">Kenyan<span class="text-indigo-600">Deals</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+                <a href="/#featured" class="hover:text-indigo-600 transition-colors">Featured</a>
+                <a href="/#all-products" class="hover:text-indigo-600 transition-colors">All Products</a>
+                <a href="#" class="hover:text-indigo-600 transition-colors">Buying Guides</a>
+                <button onclick="alert('Our weekly deals newsletter is launching soon! Check back later.')" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-indigo-600 transition-all shadow-lg shadow-slate-900/10">Subscribe</button>
+            </div>
+            
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-900"><i data-lucide="menu"></i></button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 mt-4 pt-4 pb-2 space-y-4 text-xs font-black uppercase tracking-[0.2em] text-slate-500">
+            <a href="/#featured" class="block hover:text-indigo-600 transition-colors">Featured</a>
+            <a href="/#all-products" class="block hover:text-indigo-600 transition-colors">All Products</a>
+            <a href="#" class="block hover:text-indigo-600 transition-colors">Buying Guides</a>
+            <button onclick="alert('Our weekly deals newsletter is launching soon! Check back later.')" class="w-full mt-4 bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-indigo-600 transition-all shadow-lg">Subscribe</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative pt-20 pb-12 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest border border-indigo-100">
+                <i data-lucide="zap" class="w-3 h-3"></i> 2026 Price Comparison Engine
+            </div>
+            <h1 class="text-4xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1] text-slate-900 mt-4 mb-2">
+                FIND THE BEST DEALS. <br>
+                <span class="text-indigo-600">IN ONE PLACE.</span>
+            </h1>
+            <p class="text-lg text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
+                We track thousands of products across Jumia, Amazon, and Kilimall to find you the absolute lowest prices in Kenya.
+            </p>
+            
+            <!-- SEARCH BAR -->
+            <div class="max-w-2xl mx-auto relative group">
+                <div class="absolute inset-y-0 left-5 flex items-center text-slate-400 group-focus-within:text-indigo-600 transition-colors">
+                    <i data-lucide="search" class="w-5 h-5"></i>
+                </div>
+                <input type="text" placeholder="Search for phones, solar, laptops..." 
+                    class="w-full bg-white border-2 border-slate-100 py-5 pl-14 pr-6 rounded-3xl text-sm font-bold shadow-2xl shadow-indigo-500/5 focus:border-indigo-600 focus:ring-0 outline-none transition-all">
+            </div>
+        </div>
+    </header>
+
+    <!-- FEATURED PRODUCT -->
+    <section id="featured" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="bg-indigo-600 rounded-[3rem] p-8 md:p-16 text-white grid md:grid-cols-2 items-center gap-12 overflow-hidden relative group">
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            
+            <div class="space-y-6 relative z-10">
+                <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">Editor's Pick</div>
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter leading-none">Best Power Hub 2026: EcoFlow Delta 2</h2>
+                <p class="text-indigo-100 font-medium leading-relaxed">
+                    Never worry about blackouts again. This 1024Wh portable power station can run your fridge, laptop, and TV simultaneously. We found the best price on Kilimall today.
+                </p>
+                <div class="flex items-center gap-6">
+                    <div class="text-3xl font-black tracking-tighter">KSh 142,500</div>
+                    <a href="/ecoflow-delta-2-portable-power-station-price-kenya" class="bg-white text-indigo-600 px-8 py-4 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-slate-50 transition-all shadow-xl">Get This Deal</a>
+                </div>
+            </div>
+            
+            <img src="/assets/images/ecoflow-delta2.png" class="w-full max-w-sm mx-auto object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-700">
+        </div>
+    </section>
+
+    <!-- ALL PRODUCTS GRID -->
+    <section id="all-products" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex items-center justify-between mb-12">
+            <h2 class="text-3xl font-black tracking-tighter">Current Best Deals</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-grid">
+            
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/samsung-a55.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Top Rated</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Phones</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/samsung-galaxy-a55-5g-256gb-price-kenya" class="hover:text-indigo-600">Samsung Galaxy A55 5G (256GB)</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                <i data-lucide="star" class="w-3 h-3 text-slate-200"></i>
+                <span class="text-[9px] font-black text-slate-400 ml-1">(1.2k)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 48,500</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 55,000</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">12% OFF</div>
+            </div>
+            <a href="/samsung-galaxy-a55-5g-256gb-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/macbook-m3.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Pro Choice</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Laptops</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/macbook-air-m3-13-inch-price-kenya" class="hover:text-indigo-600">MacBook Air M3 (13-inch)</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                
+                <span class="text-[9px] font-black text-slate-400 ml-1">(450)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 165,000</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 185,000</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">10% OFF</div>
+            </div>
+            <a href="/macbook-air-m3-13-inch-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/sony-headphones.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Best Audio</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Tech</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/sony-wh-1000xm5-headphones-price-kenya" class="hover:text-indigo-600">Sony WH-1000XM5 ANC</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                
+                <span class="text-[9px] font-black text-slate-400 ml-1">(3.4k)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 42,000</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 48,000</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">14% OFF</div>
+            </div>
+            <a href="/sony-wh-1000xm5-headphones-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/philips-air-fryer.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Hot Deal</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Home</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/philips-air-fryer-xl-price-kenya" class="hover:text-indigo-600">Philips Air Fryer XL (6.2L)</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                <i data-lucide="star" class="w-3 h-3 text-slate-200"></i>
+                <span class="text-[9px] font-black text-slate-400 ml-1">(1.8k)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 18,500</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 24,000</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">22% OFF</div>
+            </div>
+            <a href="/philips-air-fryer-xl-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/ecoflow-delta2.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Editor's Pick</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Solar</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/ecoflow-delta-2-portable-power-station-price-kenya" class="hover:text-indigo-600">EcoFlow Delta 2 Power Station</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                
+                <span class="text-[9px] font-black text-slate-400 ml-1">(820)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 142,500</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 160,000</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">11% OFF</div>
+            </div>
+            <a href="/ecoflow-delta-2-portable-power-station-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/magcubic-projector.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Trending</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Tech</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/magcubic-hy300-4k-projector-price-kenya" class="hover:text-indigo-600">Magcubic HY300 4K Android Projector</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                <i data-lucide="star" class="w-3 h-3 text-slate-200"></i>
+                <span class="text-[9px] font-black text-slate-400 ml-1">(12.5k)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 7,500</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 12,000</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">37% OFF</div>
+            </div>
+            <a href="/magcubic-hy300-4k-projector-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/xiaomi-band.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Best Value</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Gadgets</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/xiaomi-mi-band-8-price-kenya" class="hover:text-indigo-600">Xiaomi Mi Band 8 Smart Watch</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                
+                <span class="text-[9px] font-black text-slate-400 ml-1">(24k)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 4,200</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 6,500</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">35% OFF</div>
+            </div>
+            <a href="/xiaomi-mi-band-8-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/dash-cam.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Essential</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Auto</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/70mai-dash-cam-m300-price-kenya" class="hover:text-indigo-600">70mai Dash Cam M300</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                
+                <span class="text-[9px] font-black text-slate-400 ml-1">(8.9k)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 5,800</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 8,000</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">27% OFF</div>
+            </div>
+            <a href="/70mai-dash-cam-m300-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/baseus-powerbank.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Pro Gear</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Tech</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/baseus-blade-100w-power-bank-price-kenya" class="hover:text-indigo-600">Baseus Blade 100W Power Bank (20000mAh)</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                <i data-lucide="star" class="w-3 h-3 text-slate-200"></i>
+                <span class="text-[9px] font-black text-slate-400 ml-1">(4.2k)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 8,500</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 11,500</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">26% OFF</div>
+            </div>
+            <a href="/baseus-blade-100w-power-bank-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="bg-white border border-slate-100 rounded-3xl p-6 product-card transition-all duration-300 flex flex-col">
+        <div class="aspect-square bg-slate-50 rounded-2xl flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-slate-100 transition-colors">
+            <img src="/assets/images/lenovo-earbuds.png" class="w-3/4 h-3/4 object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-white text-indigo-600 text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-slate-100">Cheap Deal</span>
+        </div>
+        <div class="flex-1">
+            <div class="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Audio</div>
+            <h3 class="font-bold text-slate-900 leading-tight mb-2"><a href="/lenovo-lp40-pro-earbuds-price-kenya" class="hover:text-indigo-600">Lenovo LP40 Pro Wireless Earbuds</a></h3>
+            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                <i data-lucide="star" class="w-3 h-3 text-slate-200"></i>
+                <span class="text-[9px] font-black text-slate-400 ml-1">(50k+)</span>
+            </div>
+        </div>
+        <div class="pt-4 border-t border-slate-50">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xl font-black text-slate-900">KSh 1,200</div>
+                    <div class="text-[10px] text-slate-400 line-through">KSh 2,500</div>
+                </div>
+                <div class="text-[9px] font-black text-emerald-500 uppercase tracking-widest mb-1">52% OFF</div>
+            </div>
+            <a href="/lenovo-lp40-pro-earbuds-price-kenya" class="w-full bg-slate-900 text-white py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-indigo-600 transition-all">
+                View Deal
+            </a>
+        </div>
+    </div>
+    
+        </div>
+        
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div class="md:col-span-2 space-y-6">
+                <div class="flex items-center gap-2">
+                    <div class="bg-indigo-600 text-white p-1.5 rounded-lg">
+                        <i data-lucide="trending-up" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-black tracking-tighter text-white uppercase">Kenyan<span class="text-indigo-600">Deals</span></span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                    Kenya's most trusted price comparison engine. We help you find the best value across global and local retailers with zero bias. 
+                    Supported by affiliate partnerships.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Explore</h4>
+                <ul class="space-y-4 text-sm font-bold text-slate-400">
+                    <li><a href="/#all-products" class="hover:text-white">Top Tech Deals</a></li>
+                    <li><a href="/ecoflow-delta-2-portable-power-station-price-kenya" class="hover:text-white">Solar Buying Guide</a></li>
+                    <li><a href="/#all-products" class="hover:text-white">Importing from Amazon</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-6">Accountability</h4>
+                <ul class="space-y-4 text-xs font-bold text-slate-500">
+                    <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i> Amazon Associate</li>
+                    <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i> Jumia KOL Partner</li>
+                    <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i> Kilimall Partner</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-12 border-t border-white/5 text-center">
+            <p class="text-[9px] font-black text-slate-600 uppercase tracking-widest italic">
+                Kenyan Deals is an independent review site. When you buy through our links, we may earn a small commission.
+            </p>
+            <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-4">
+                © 2026 Kenyan Deals. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
