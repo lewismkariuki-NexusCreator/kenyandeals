@@ -1,0 +1,5 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a1a1b"/>
+  <text x="50%" y="50%" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="bold" fill="#666666" text-anchor="middle" dy=".3em">Image Coming Soon</text>
+  <path d="M400 320 C360 320 320 350 320 400 C320 450 360 480 400 480 C440 480 480 450 480 400 C480 350 440 320 400 320 Z M400 340 C430 340 450 360 460 380 L340 380 C350 360 370 340 400 340 Z M340 420 L460 420 C450 440 430 460 400 460 C370 460 350 440 340 420 Z" fill="#333333" opacity="0.5" />
+</svg>
